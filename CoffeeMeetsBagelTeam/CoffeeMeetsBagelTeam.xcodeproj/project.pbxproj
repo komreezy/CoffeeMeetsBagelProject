@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69C112BC1EE22A470045A66D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C112BB1EE22A470045A66D /* AppDelegate.swift */; };
+		69C112C11EE22A470045A66D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C112BF1EE22A470045A66D /* Main.storyboard */; };
+		69C112C31EE22A470045A66D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C112C21EE22A470045A66D /* Assets.xcassets */; };
+		69C112C61EE22A470045A66D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C112C41EE22A470045A66D /* LaunchScreen.storyboard */; };
+		69C112CE1EE22A820045A66D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C112CD1EE22A820045A66D /* GradientView.swift */; };
+		69C112D01EE22AAC0045A66D /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C112CF1EE22AAC0045A66D /* GradientLayer.swift */; };
+		69C112D21EE22B4D0045A66D /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C112D11EE22B4D0045A66D /* UIColor+HEX.swift */; };
+		69C112D41EE22B920045A66D /* GradientViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C112D31EE22B920045A66D /* GradientViewProvider.swift */; };
+		69C112D61EE22BC10045A66D /* GradientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C112D51EE22BC10045A66D /* GradientType.swift */; };
+		69C113151EE2E40A0045A66D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113141EE2E40A0045A66D /* Employee.swift */; };
+		69C113201EE2E7460045A66D /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1131E1EE2E7460045A66D /* TeamTableViewController.swift */; };
+		69C113211EE2E7460045A66D /* TeamTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C1131F1EE2E7460045A66D /* TeamTableViewController.xib */; };
+		69C113241EE2E7620045A66D /* LeftTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113221EE2E7620045A66D /* LeftTeamTableViewCell.swift */; };
+		69C113251EE2E7620045A66D /* LeftTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C113231EE2E7620045A66D /* LeftTeamTableViewCell.xib */; };
+		69C113281EE2E7710045A66D /* RightTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113261EE2E7710045A66D /* RightTeamTableViewCell.swift */; };
+		69C113291EE2E7710045A66D /* RightTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C113271EE2E7710045A66D /* RightTeamTableViewCell.xib */; };
+		69C1132B1EE4BC310045A66D /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1132A1EE4BC310045A66D /* TeamViewModel.swift */; };
+		69C1132F1EE4BF9B0045A66D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1132E1EE4BF9B0045A66D /* API.swift */; };
+		69C113311EE4C2230045A66D /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113301EE4C2230045A66D /* EmployeeListView.swift */; };
+		69C113331EE4C58E0045A66D /* team.json in Resources */ = {isa = PBXBuildFile; fileRef = 69C113321EE4C58E0045A66D /* team.json */; };
+		69C113351EE4CB310045A66D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113341EE4CB310045A66D /* Constants.swift */; };
+		69C1133A1EE4D9100045A66D /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113391EE4D9100045A66D /* UIImageView+LoadImage.swift */; };
+		69C1133D1EE4F6950045A66D /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1133B1EE4F6950045A66D /* EmployeeDetailViewController.swift */; };
+		69C1133E1EE4F6950045A66D /* EmployeeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C1133C1EE4F6950045A66D /* EmployeeDetailViewController.xib */; };
+		69C1134A1EE51F1C0045A66D /* DetailTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113491EE51F1C0045A66D /* DetailTransitionAnimator.swift */; };
+		69C1134C1EE5B06C0045A66D /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1134B1EE5B06C0045A66D /* TeamTableViewCell.swift */; };
+		69C113581EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113571EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.swift */; };
+		69C113601EE5D0C10045A66D /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1135F1EE5D0C10045A66D /* MockAPI.swift */; };
+		69C113621EE5D0E50045A66D /* MockEmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113611EE5D0E50045A66D /* MockEmployeeListView.swift */; };
+		69C113631EE5D1350045A66D /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1132A1EE4BC310045A66D /* TeamViewModel.swift */; };
+		69C113641EE5D14A0045A66D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C1132E1EE4BF9B0045A66D /* API.swift */; };
+		69C113651EE5D2C60045A66D /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113301EE4C2230045A66D /* EmployeeListView.swift */; };
+		69C113661EE5D7C70045A66D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C113141EE2E40A0045A66D /* Employee.swift */; };
+		69C113681EE5E5B30045A66D /* GradientViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C112D31EE22B920045A66D /* GradientViewProvider.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69C1135A1EE5D09E0045A66D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C112B01EE22A470045A66D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69C112B71EE22A470045A66D;
+			remoteInfo = CoffeeMeetsBagelTeam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69C112B81EE22A470045A66D /* CoffeeMeetsBagelTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMeetsBagelTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C112BB1EE22A470045A66D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69C112C01EE22A470045A66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69C112C21EE22A470045A66D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69C112C51EE22A470045A66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69C112C71EE22A470045A66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C112CD1EE22A820045A66D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		69C112CF1EE22AAC0045A66D /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		69C112D11EE22B4D0045A66D /* UIColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
+		69C112D31EE22B920045A66D /* GradientViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientViewProvider.swift; sourceTree = "<group>"; };
+		69C112D51EE22BC10045A66D /* GradientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientType.swift; sourceTree = "<group>"; };
+		69C113071EE248BA0045A66D /* CoffeeMeetsBagelTeam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoffeeMeetsBagelTeam-Bridging-Header.h"; sourceTree = "<group>"; };
+		69C113141EE2E40A0045A66D /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		69C1131E1EE2E7460045A66D /* TeamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		69C1131F1EE2E7460045A66D /* TeamTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamTableViewController.xib; sourceTree = "<group>"; };
+		69C113221EE2E7620045A66D /* LeftTeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTeamTableViewCell.swift; sourceTree = "<group>"; };
+		69C113231EE2E7620045A66D /* LeftTeamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftTeamTableViewCell.xib; sourceTree = "<group>"; };
+		69C113261EE2E7710045A66D /* RightTeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightTeamTableViewCell.swift; sourceTree = "<group>"; };
+		69C113271EE2E7710045A66D /* RightTeamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightTeamTableViewCell.xib; sourceTree = "<group>"; };
+		69C1132A1EE4BC310045A66D /* TeamViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
+		69C1132E1EE4BF9B0045A66D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		69C113301EE4C2230045A66D /* EmployeeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		69C113321EE4C58E0045A66D /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
+		69C113341EE4CB310045A66D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		69C113391EE4D9100045A66D /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
+		69C1133B1EE4F6950045A66D /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
+		69C1133C1EE4F6950045A66D /* EmployeeDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeDetailViewController.xib; sourceTree = "<group>"; };
+		69C113491EE51F1C0045A66D /* DetailTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTransitionAnimator.swift; sourceTree = "<group>"; };
+		69C1134B1EE5B06C0045A66D /* TeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		69C113551EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeMeetsBagelTeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C113571EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMeetsBagelTeamTests.swift; sourceTree = "<group>"; };
+		69C113591EE5D09E0045A66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C1135F1EE5D0C10045A66D /* MockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		69C113611EE5D0E50045A66D /* MockEmployeeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockEmployeeListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69C112B51EE22A470045A66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C113521EE5D09E0045A66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69C112AF1EE22A470045A66D = {
+			isa = PBXGroup;
+			children = (
+				69C112BA1EE22A470045A66D /* CoffeeMeetsBagelTeam */,
+				69C113561EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests */,
+				69C112B91EE22A470045A66D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69C112B91EE22A470045A66D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69C112B81EE22A470045A66D /* CoffeeMeetsBagelTeam.app */,
+				69C113551EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69C112BA1EE22A470045A66D /* CoffeeMeetsBagelTeam */ = {
+			isa = PBXGroup;
+			children = (
+				69C112BB1EE22A470045A66D /* AppDelegate.swift */,
+				69C113341EE4CB310045A66D /* Constants.swift */,
+				69C113361EE4CD4E0045A66D /* Protocols */,
+				69C112E01EE243BE0045A66D /* Utilities */,
+				69C1132D1EE4BF8C0045A66D /* API Manager */,
+				69C1134D1EE5B3170045A66D /* Animators */,
+				69C1132C1EE4BD050045A66D /* Models */,
+				69C1130B1EE251360045A66D /* View Models */,
+				69C112E21EE243E60045A66D /* View Controllers */,
+				69C112E11EE243DB0045A66D /* Views */,
+				69C112D71EE22BD40045A66D /* Gradient */,
+				69C113321EE4C58E0045A66D /* team.json */,
+				69C113071EE248BA0045A66D /* CoffeeMeetsBagelTeam-Bridging-Header.h */,
+				69C112BF1EE22A470045A66D /* Main.storyboard */,
+				69C112C21EE22A470045A66D /* Assets.xcassets */,
+				69C112C41EE22A470045A66D /* LaunchScreen.storyboard */,
+				69C112C71EE22A470045A66D /* Info.plist */,
+			);
+			path = CoffeeMeetsBagelTeam;
+			sourceTree = "<group>";
+		};
+		69C112D71EE22BD40045A66D /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				69C112D31EE22B920045A66D /* GradientViewProvider.swift */,
+				69C112D51EE22BC10045A66D /* GradientType.swift */,
+				69C112CD1EE22A820045A66D /* GradientView.swift */,
+				69C112CF1EE22AAC0045A66D /* GradientLayer.swift */,
+			);
+			name = Gradient;
+			sourceTree = "<group>";
+		};
+		69C112E01EE243BE0045A66D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				69C112D11EE22B4D0045A66D /* UIColor+HEX.swift */,
+				69C113391EE4D9100045A66D /* UIImageView+LoadImage.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		69C112E11EE243DB0045A66D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69C113221EE2E7620045A66D /* LeftTeamTableViewCell.swift */,
+				69C113231EE2E7620045A66D /* LeftTeamTableViewCell.xib */,
+				69C113261EE2E7710045A66D /* RightTeamTableViewCell.swift */,
+				69C113271EE2E7710045A66D /* RightTeamTableViewCell.xib */,
+				69C1134B1EE5B06C0045A66D /* TeamTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		69C112E21EE243E60045A66D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69C1131E1EE2E7460045A66D /* TeamTableViewController.swift */,
+				69C1131F1EE2E7460045A66D /* TeamTableViewController.xib */,
+				69C1133B1EE4F6950045A66D /* EmployeeDetailViewController.swift */,
+				69C1133C1EE4F6950045A66D /* EmployeeDetailViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		69C1130B1EE251360045A66D /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				69C1132A1EE4BC310045A66D /* TeamViewModel.swift */,
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+		69C1132C1EE4BD050045A66D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69C113141EE2E40A0045A66D /* Employee.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		69C1132D1EE4BF8C0045A66D /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				69C1132E1EE4BF9B0045A66D /* API.swift */,
+			);
+			name = "API Manager";
+			sourceTree = "<group>";
+		};
+		69C113361EE4CD4E0045A66D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				69C113301EE4C2230045A66D /* EmployeeListView.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		69C1134D1EE5B3170045A66D /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				69C113491EE51F1C0045A66D /* DetailTransitionAnimator.swift */,
+			);
+			name = Animators;
+			sourceTree = "<group>";
+		};
+		69C113561EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests */ = {
+			isa = PBXGroup;
+			children = (
+				69C113571EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.swift */,
+				69C1135F1EE5D0C10045A66D /* MockAPI.swift */,
+				69C113611EE5D0E50045A66D /* MockEmployeeListView.swift */,
+				69C113591EE5D09E0045A66D /* Info.plist */,
+			);
+			path = CoffeeMeetsBagelTeamTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69C112B71EE22A470045A66D /* CoffeeMeetsBagelTeam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69C112CA1EE22A470045A66D /* Build configuration list for PBXNativeTarget "CoffeeMeetsBagelTeam" */;
+			buildPhases = (
+				69C112B41EE22A470045A66D /* Sources */,
+				69C112B51EE22A470045A66D /* Frameworks */,
+				69C112B61EE22A470045A66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeMeetsBagelTeam;
+			productName = CoffeeMeetsBagelTeam;
+			productReference = 69C112B81EE22A470045A66D /* CoffeeMeetsBagelTeam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69C113541EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69C1135C1EE5D09E0045A66D /* Build configuration list for PBXNativeTarget "CoffeeMeetsBagelTeamTests" */;
+			buildPhases = (
+				69C113511EE5D09E0045A66D /* Sources */,
+				69C113521EE5D09E0045A66D /* Frameworks */,
+				69C113531EE5D09E0045A66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69C1135B1EE5D09E0045A66D /* PBXTargetDependency */,
+			);
+			name = CoffeeMeetsBagelTeamTests;
+			productName = CoffeeMeetsBagelTeamTests;
+			productReference = 69C113551EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69C112B01EE22A470045A66D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Komran Ghahremani";
+				TargetAttributes = {
+					69C112B71EE22A470045A66D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G23SDK69HF;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					69C113541EE5D09E0045A66D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G23SDK69HF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 69C112B71EE22A470045A66D;
+					};
+				};
+			};
+			buildConfigurationList = 69C112B31EE22A470045A66D /* Build configuration list for PBXProject "CoffeeMeetsBagelTeam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69C112AF1EE22A470045A66D;
+			productRefGroup = 69C112B91EE22A470045A66D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69C112B71EE22A470045A66D /* CoffeeMeetsBagelTeam */,
+				69C113541EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69C112B61EE22A470045A66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C112C61EE22A470045A66D /* LaunchScreen.storyboard in Resources */,
+				69C112C31EE22A470045A66D /* Assets.xcassets in Resources */,
+				69C113251EE2E7620045A66D /* LeftTeamTableViewCell.xib in Resources */,
+				69C113291EE2E7710045A66D /* RightTeamTableViewCell.xib in Resources */,
+				69C113211EE2E7460045A66D /* TeamTableViewController.xib in Resources */,
+				69C112C11EE22A470045A66D /* Main.storyboard in Resources */,
+				69C1133E1EE4F6950045A66D /* EmployeeDetailViewController.xib in Resources */,
+				69C113331EE4C58E0045A66D /* team.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C113531EE5D09E0045A66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69C112B41EE22A470045A66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C112D21EE22B4D0045A66D /* UIColor+HEX.swift in Sources */,
+				69C112D61EE22BC10045A66D /* GradientType.swift in Sources */,
+				69C113281EE2E7710045A66D /* RightTeamTableViewCell.swift in Sources */,
+				69C1134C1EE5B06C0045A66D /* TeamTableViewCell.swift in Sources */,
+				69C113151EE2E40A0045A66D /* Employee.swift in Sources */,
+				69C1133D1EE4F6950045A66D /* EmployeeDetailViewController.swift in Sources */,
+				69C112D01EE22AAC0045A66D /* GradientLayer.swift in Sources */,
+				69C1132F1EE4BF9B0045A66D /* API.swift in Sources */,
+				69C1134A1EE51F1C0045A66D /* DetailTransitionAnimator.swift in Sources */,
+				69C113351EE4CB310045A66D /* Constants.swift in Sources */,
+				69C112BC1EE22A470045A66D /* AppDelegate.swift in Sources */,
+				69C113201EE2E7460045A66D /* TeamTableViewController.swift in Sources */,
+				69C1133A1EE4D9100045A66D /* UIImageView+LoadImage.swift in Sources */,
+				69C1132B1EE4BC310045A66D /* TeamViewModel.swift in Sources */,
+				69C112CE1EE22A820045A66D /* GradientView.swift in Sources */,
+				69C113311EE4C2230045A66D /* EmployeeListView.swift in Sources */,
+				69C112D41EE22B920045A66D /* GradientViewProvider.swift in Sources */,
+				69C113241EE2E7620045A66D /* LeftTeamTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C113511EE5D09E0045A66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C113601EE5D0C10045A66D /* MockAPI.swift in Sources */,
+				69C113681EE5E5B30045A66D /* GradientViewProvider.swift in Sources */,
+				69C113631EE5D1350045A66D /* TeamViewModel.swift in Sources */,
+				69C113651EE5D2C60045A66D /* EmployeeListView.swift in Sources */,
+				69C113661EE5D7C70045A66D /* Employee.swift in Sources */,
+				69C113621EE5D0E50045A66D /* MockEmployeeListView.swift in Sources */,
+				69C113581EE5D09E0045A66D /* CoffeeMeetsBagelTeamTests.swift in Sources */,
+				69C113641EE5D14A0045A66D /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69C1135B1EE5D09E0045A66D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69C112B71EE22A470045A66D /* CoffeeMeetsBagelTeam */;
+			targetProxy = 69C1135A1EE5D09E0045A66D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69C112BF1EE22A470045A66D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C112C01EE22A470045A66D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69C112C41EE22A470045A66D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C112C51EE22A470045A66D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69C112C81EE22A470045A66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69C112C91EE22A470045A66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69C112CB1EE22A470045A66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G23SDK69HF;
+				INFOPLIST_FILE = CoffeeMeetsBagelTeam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.komran.CoffeeMeetsBagelTeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoffeeMeetsBagelTeam/CoffeeMeetsBagelTeam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		69C112CC1EE22A470045A66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G23SDK69HF;
+				INFOPLIST_FILE = CoffeeMeetsBagelTeam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.komran.CoffeeMeetsBagelTeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoffeeMeetsBagelTeam/CoffeeMeetsBagelTeam-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		69C1135D1EE5D09E0045A66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G23SDK69HF;
+				INFOPLIST_FILE = CoffeeMeetsBagelTeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.komran.CoffeeMeetsBagelTeamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeMeetsBagelTeam.app/CoffeeMeetsBagelTeam";
+			};
+			name = Debug;
+		};
+		69C1135E1EE5D09E0045A66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G23SDK69HF;
+				INFOPLIST_FILE = CoffeeMeetsBagelTeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.komran.CoffeeMeetsBagelTeamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffeeMeetsBagelTeam.app/CoffeeMeetsBagelTeam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69C112B31EE22A470045A66D /* Build configuration list for PBXProject "CoffeeMeetsBagelTeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C112C81EE22A470045A66D /* Debug */,
+				69C112C91EE22A470045A66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69C112CA1EE22A470045A66D /* Build configuration list for PBXNativeTarget "CoffeeMeetsBagelTeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C112CB1EE22A470045A66D /* Debug */,
+				69C112CC1EE22A470045A66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69C1135C1EE5D09E0045A66D /* Build configuration list for PBXNativeTarget "CoffeeMeetsBagelTeamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C1135D1EE5D09E0045A66D /* Debug */,
+				69C1135E1EE5D09E0045A66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69C112B01EE22A470045A66D /* Project object */;
+}
