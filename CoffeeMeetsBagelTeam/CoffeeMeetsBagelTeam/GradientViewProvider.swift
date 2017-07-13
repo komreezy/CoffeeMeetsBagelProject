@@ -39,8 +39,8 @@ extension UIView: GradientViewProvider {
         
         for i in stride(from: 0, to: colors.count - 1, by: 1) {
             let newRed = (1.0 - progress) * colors[i].red + progress * colors[i+1].red
-            let newGreen = (1.0 - progress) * colors[i].green + progress * colors[i].green
-            let newBlue = (1.0 - progress) * colors[i].blue + progress * colors[i].blue
+            let newGreen = (1.0 - progress) * colors[i].green + progress * colors[i+1].green
+            let newBlue = (1.0 - progress) * colors[i].blue + progress * colors[i+1].blue
             rgbs.append(RGB(red: newRed, green: newGreen, blue: newBlue))
         }
         
