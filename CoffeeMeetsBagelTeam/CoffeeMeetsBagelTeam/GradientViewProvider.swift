@@ -21,6 +21,17 @@ struct RGB {
     var blue: Float = 0.0
 }
 
+protocol GradientViewProvider {
+    associatedtype GradientViewType
+    func calculateGradient(for progress: Float, in view: UIView, with colors: RGB...)
+}
+
+extension GradientViewProvider where Self: UIView, Self.GradientViewType: CAGradientLayer {
+    var gradientLayer: Self.GradientViewType {
+        return layer as! Self.GradientViewType
+    }
+}
+
 extension UIView: GradientViewProvider {
     func calculateGradient(for progress: Float, in view: UIView, with colors: RGB...) {
         var newGradientColors: [CGColor] = []
@@ -37,20 +48,9 @@ extension UIView: GradientViewProvider {
             let newColor = UIColor(colorLiteralRed: rgb.red, green: rgb.green, blue: rgb.blue, alpha: 1.0).cgColor
             newGradientColors.append(newColor)
         }
-
+        
         view.gradientLayer.colors = newGradientColors
     }
-
+    
     typealias GradientViewType = GradientLayer
-}
-
-protocol GradientViewProvider {
-    associatedtype GradientViewType
-    func calculateGradient(for progress: Float, in view: UIView, with colors: RGB...)
-}
-
-extension GradientViewProvider where Self: UIView, Self.GradientViewType: CAGradientLayer {
-    var gradientLayer: Self.GradientViewType {
-        return layer as! Self.GradientViewType
-    }
 }

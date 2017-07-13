@@ -23,11 +23,6 @@ class TeamTableViewController: UITableViewController {
         self.tableView.register(UINib(nibName: "RightTeamTableViewCell", bundle: nil), forCellReuseIdentifier: rightCellReuseIdentifier)
         self.tableView.backgroundColor = .clear
         
-        let maxOffset = tableView.contentSize.height - tableView.frame.height
-        let currentOffset = tableView.contentOffset.y
-        let progress = Float(currentOffset / maxOffset)
-        
-        background.calculateGradient(for: progress, in: background)
         setupNavBar()
         
         background.frame = tableView.bounds
