@@ -44,7 +44,7 @@ class TeamTableViewController: UITableViewController {
         let progress = Float(currentOffset / maxOffset)
         
         navigationItem.titleView?.alpha = 1.0 - min(currentOffset / 90.0, 1.0)
-        background.calculateGradient(for: progress, in: background, with: startColor, middleColor, secondMiddleColor, finalColor)
+        background.calculateGradient(for: progress, with: startColor, middleColor, secondMiddleColor, finalColor)
     }
     
     func setupNavBar() {
